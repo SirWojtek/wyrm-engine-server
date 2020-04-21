@@ -6,6 +6,6 @@
   "username": "postgres",
   "password": "password",
   "database": "wyrm-engine-server",
-  "entities": [ "dist/backend/src/models/db/*.entity.js" ],
+  "entities": [ "dist/models/db/*.entity.js" ],
   "synchronize": true
 }
