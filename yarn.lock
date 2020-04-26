@@ -592,6 +592,11 @@
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
 
+"@types/lodash@^4.14.150":
+  version "4.14.150"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.150.tgz#649fe44684c3f1fcb6164d943c5a61977e8cf0bd"
+  integrity sha512-kMNLM5JBcasgYscD9x/Gvr6lTAv2NVgsKtet/hm93qMyf/D1pt+7jeEZklKJKxMVmXjxbRVQQGfqDSfipYCO6w==
+
 "@types/mime@*":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-2.0.1.tgz#dc488842312a7f075149312905b5e3c0b054c79d"
@@ -6476,10 +6481,10 @@ ws@^5.2.0:
   dependencies:
     async-limiter "~1.0.0"
 
-wyrm-engine@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/wyrm-engine/-/wyrm-engine-1.1.0.tgz#0a18192e1809df01530a8744aefd28082078cf6e"
-  integrity sha512-fLH21Y/C2G8A0xnTu9NtsQt8m1dttzEj/T5Oqq7C6sQNH/ial0zJu+SHV8H5WjoevrZmCj2mKRcUic4oFjR+vQ==
+wyrm-engine@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/wyrm-engine/-/wyrm-engine-1.2.0.tgz#5b3aed7b687406d360d4b4a9f483703538228b16"
+  integrity sha512-HMIop8oKEob7RLF+z4FRk6fa1x7pdPKay9/9frKHVdKRcFVcSbahwG+h0DCxtVQ5rf7lxSZfE+X6Wm2nvdBVoQ==
   dependencies:
     lodash "^4.17.15"
     uuid "^3.3.3"

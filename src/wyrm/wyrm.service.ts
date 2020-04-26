@@ -1,19 +1,26 @@
 import { Injectable } from '@nestjs/common';
-import { createEngine } from 'wyrm-engine';
-import { CreateEncounterRequest } from '../models/api/create-encounter-request';
+import { createEngine, IEngineCharacter, IEncounterState } from 'wyrm-engine';
+import { toEncounterEntity } from '../mapper/encounter.mapper';
 
 @Injectable()
 export class WyrmService {
   private wyrmEngine = createEngine();
 
-  createEncounter(request: CreateEncounterRequest) {
-    const encounter = this.wyrmEngine.createEncounter(
-      request.teamA,
-      request.teamB,
-    );
+  createEncounter(
+    teamA: IEngineCharacter[],
+    teamB: IEngineCharacter[],
+  ): IEncounterState {
+    const encounter = this.wyrmEngine.createEncounter(teamA, teamB);
+    const encounterState = encounter.getState();
+
+    const encounterEntity = toEncounterEntity(encounterState);
+
+    // TODO: persist new entity
+
+    return encounterState;
   }
 
-  addAction() {}
+  addAction(encounterId: string) {}
 
-  tick() {}
+  tick(encounterId: string) {}
 }
